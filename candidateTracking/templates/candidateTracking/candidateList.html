@@ -1,0 +1,13 @@
+<html>
+<body>
+
+<ul>
+    {% for entry in context %}
+    <li>
+        <a href="/candidateDetails/{{ entry.id }}"> {{ entry.name }} </a>
+    </li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
